@@ -595,6 +595,8 @@ footer{padding:64px 0 28px}
 .pied-grille li{margin-bottom:9px}
 .pied-grille a:hover{color:#fff}
 .pied-grille p{color:#8a8a8a;margin-top:14px;max-width:260px}
+.signe-toudoum{display:inline-flex;align-items:center;gap:9px;color:#cfcfcf}
+.signe-toudoum i{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:#fff;color:#1c1b1b;font-style:normal;font-weight:500;font-size:.8rem}
 .pied-bas{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:46px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:.74rem}
 @media (max-width:960px){
   .rassure .wrap{grid-template-columns:1fr 1fr}
@@ -722,6 +724,7 @@ footer{padding:64px 0 28px}
 .prog li b{display:block;font-weight:500;font-size:.98rem}
 .prog li span{font-size:.86rem;color:var(--gris)}
 .cles{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#e0ded9;border:1px solid #e0ded9}
+.cles.quatre{grid-template-columns:repeat(4,1fr)}
 .cles div{background:#fff;padding:26px 18px;text-align:center}
 .cles b{display:block;font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gris);margin-bottom:10px}
 .cles span{font-size:.95rem}
@@ -741,7 +744,7 @@ footer{padding:64px 0 28px}
   .volet-img .visuel{aspect-ratio:4/3}
   .fiches{grid-template-columns:1fr 1fr}
   .programme{grid-template-columns:1fr}
-  .cles{grid-template-columns:1fr 1fr}
+  .cles,.cles.quatre{grid-template-columns:1fr 1fr}
   .etapes-grille.quatre{grid-template-columns:1fr 1fr}
   .citation{padding:70px 0}
 }
