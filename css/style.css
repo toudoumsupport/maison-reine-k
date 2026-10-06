@@ -606,3 +606,59 @@ footer{padding:64px 0 28px}
   footer{padding-bottom:100px}
 }
 @media (max-width:560px){.pied-grille{grid-template-columns:1fr}.vers-carte{aspect-ratio:4/3}}
+
+/* ===== Site multi-pages v2 : accueil en aperçu, une page par rubrique ===== */
+.titre-bloc{text-align:center;margin-bottom:48px}
+.titre-bloc h2{margin-bottom:0}
+.suite{text-align:center;margin-top:40px}
+.univers{background:#fff}
+.univers-grille{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ucarte{display:flex;flex-direction:column;background:#f7f5f2;transition:transform .35s,box-shadow .35s}
+.ucarte:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.09)}
+.ucarte .visuel{aspect-ratio:4/5}
+.ucarte .visuel img{transition:transform 1s ease}
+.ucarte:hover .visuel img{transform:scale(1.05)}
+.ucarte .txt{padding:24px 22px 26px;display:flex;flex-direction:column;flex:1}
+.ucarte .num{font-size:.66rem;letter-spacing:.26em;color:var(--or)}
+.ucarte h3{font-size:1.5rem;margin:.3em 0 .35em}
+.ucarte p{font-size:.88rem;flex:1;margin-bottom:18px}
+.ucarte .voir{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#1c1b1b}
+.vedettes{background:var(--sable)}
+.vedettes-grille .produit{background:#fff;border:1px solid #e7e7e7}
+.vedettes-grille .produit .corps{text-align:left}
+.vedettes-grille a.btn-ajout{margin-top:14px;padding:10px 16px;font-size:.66rem}
+.preuves-accueil{background:#fff}
+.preuves-grille{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:860px;margin:0 auto}
+.preuves-grille .suite{margin-top:22px}
+.apropos-apercu{background:#f3f3f3;text-align:center}
+.apropos-apercu p{max-width:620px;margin:0 auto}
+.apropos-apercu .preuve-chiffres{margin:44px auto;max-width:860px}
+.appel{background:#1c1b1b;color:#fff;text-align:center;padding:90px 0}
+.appel h2{color:#fff}
+.appel p{color:#cfcfcf;max-width:520px;margin:0 auto 32px}
+.appel .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.appel .btn-or{background:#fff;color:#1c1b1b;border-color:#fff}
+.appel .btn-or:hover{background:var(--or-clair);border-color:var(--or-clair)}
+.appel .btn-ligne{color:#fff;border-color:#fff}
+.appel .btn-ligne:hover{background:#fff;color:#1c1b1b}
+.etapes{background:#fff}
+.etapes-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.etapes-grille>div{background:#f7f5f2;padding:34px 28px;border-top:2px solid #1c1b1b}
+.etapes-grille b{font-weight:300;font-size:2rem;color:var(--or);display:block;line-height:1;margin-bottom:14px}
+.etapes-grille h3{font-size:1.25rem;margin-bottom:8px}
+.etapes-grille p{font-size:.9rem}
+.hero-in .ctas{margin-bottom:0}
+@media (max-width:960px){
+  .univers-grille{grid-template-columns:1fr 1fr}
+  .etapes-grille{grid-template-columns:1fr}
+  .preuves-grille{gap:24px}
+  .appel{padding:70px 0}
+}
+@media (max-width:560px){
+  .univers-grille{grid-template-columns:1fr}
+  .ucarte{flex-direction:row}
+  .ucarte .visuel{aspect-ratio:auto;width:38%;flex:none;min-height:170px}
+  .ucarte .txt{padding:18px 16px}
+  .ucarte h3{font-size:1.25rem}
+  .preuves-grille{grid-template-columns:1fr}
+}
