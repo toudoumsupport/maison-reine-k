@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Extensions & perruques — pose au salon | Maison Reine K</title>
-<meta name="description" content="Tissage, closure, tape-in, i-tips, k-tips et pose de perruque avec la Méthode USA. Mèches RAW double drawn dès 150 €. En France, sur rendez-vous.">
+<meta name="description" content="Mèches RAW double drawn à commander en ligne (lot de 2 bundles, 10″ à 30″, dès 150 €) et pose au salon : tissage, closure, tape-in, i-tips, perruque. En France, sur rendez-vous.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231c1b1b'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Georgia' fill='%23fff' text-anchor='middle'%3ERK%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="Extensions & perruques — pose au salon | Maison Reine K">
-<meta property="og:description" content="Tissage, closure, tape-in, i-tips, k-tips et pose de perruque avec la Méthode USA. Mèches RAW double drawn dès 150 €. En France, sur rendez-vous.">
+<meta property="og:description" content="Mèches RAW double drawn à commander en ligne (lot de 2 bundles, 10″ à 30″, dès 150 €) et pose au salon : tissage, closure, tape-in, i-tips, perruque. En France, sur rendez-vous.">
 <meta property="og:image" content="img/hero-cliente.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
       <span class="logo-txt">Maison Reine K<small>Beauty & Care</small></span>
     </a>
     <ul class="menu" id="menu">
-      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="boutique.html">Produits</a></li>
       <li><a href="extensions.html" class="actif">Extensions</a></li>
       <li><a href="lissages.html">Lissages</a></li>
       <li><a href="formations.html">Formations</a></li>
@@ -55,7 +55,7 @@
     <div class="pt-txt">
       <p class="fil"><a href="index.html">Accueil</a> · Extensions</p>
       <h1>Extensions & <em>perruques</em></h1>
-      <p>Des mèches RAW posées au salon avec la Méthode USA : invisibles, confortables, durables.</p>
+      <p>Les mèches RAW à commander en ligne, et leur pose au salon avec la Méthode USA.</p>
     </div>
     <div class="visuel"><img src="img/avant-apres-long.jpg" alt="" style="object-position:50% 28%"></div>
   </div>
@@ -75,12 +75,51 @@
         <li><div><h4>I-tips</h4><small>Extensions mèche à mèche, Méthode USA</small></div><span class="prix">Sur devis</span></li>
         <li><div><h4>V part & U part</h4><small>Perruques effet cuir chevelu</small></div><span class="prix">Sur devis</span></li>
         <li><div><h4>Wigs install</h4><small>Pose et personnalisation de perruque</small></div><span class="prix">Sur devis</span></li>
-        <li><div><h4>Mèches RAW</h4><small>Lot de 2 bundles double drawn, 10″ à 30″</small></div><a class="prix" href="boutique.html#tarifs">Dès 150 € →</a></li>
+        <li><div><h4>Mèches RAW</h4><small>Lot de 2 bundles double drawn, 10″ à 30″</small></div><a class="prix" href="#tarifs">Dès 150 € →</a></li>
       </ul>
     </div>
     <div class="rev" style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap">
-      <a href="boutique.html#tarifs" class="btn btn-or">Commander mes mèches</a>
+      <a href="#tarifs" class="btn btn-or">Commander mes mèches</a>
       <a href="https://wa.me/33661093864?text=Bonjour%20Maison%20Reine%20K%2C%20je%20souhaite%20un%20devis%20pour%20une%20pose%20d%27extensions." class="btn btn-sombre" target="_blank" rel="noopener">Demander un devis de pose</a>
+    </div>
+  </div>
+</section>
+
+<section class="tarifs" id="tarifs">
+  <div class="wrap tarifs-grille">
+    <div class="visuel rev"><img src="img/meches-raw.jpg" alt="Mèches RAW double drawn Maison Reine K" loading="lazy" style="object-position:50% 45%"></div>
+    <div class="rev">
+      <span class="eyebrow">Mèches RAW · Double drawn</span>
+      <h2>Nos <em>bundles</em></h2>
+      <p>Cheveux 100 % naturels, non traités, épaisseur constante de la racine aux pointes. Prix pour un lot de 2 bundles.</p>
+      <div class="selecteur rev">
+        <span class="eyebrow">Calculez votre commande</span>
+        <div class="longueurs" id="longueurs"></div>
+        <div class="prix-affiche"><b id="prix-val">150 €</b><small id="prix-info">10″ · 10″ — lot de 2 bundles, double drawn</small></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+          <button type="button" id="ajout-bundle" class="btn btn-ajout" style="width:auto">Ajouter au panier</button>
+          <a href="#" id="commander" class="btn btn-sombre" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+        </div>
+      </div>
+      <table class="prix-table">
+        <tr><th>Longueur</th><th style="text-align:right">Lot de 2 bundles</th></tr>
+        <tr><td>10″ · 10″</td><td>150 €</td></tr>
+        <tr><td>12″ · 12″</td><td>170 €</td></tr>
+        <tr><td>14″ · 14″</td><td>190 €</td></tr>
+        <tr><td>16″ · 16″</td><td>210 €</td></tr>
+        <tr><td>18″ · 18″</td><td>230 €</td></tr>
+        <tr><td>20″ · 20″</td><td>250 €</td></tr>
+        <tr><td>22″ · 22″</td><td>350 €</td></tr>
+        <tr><td>24″ · 24″</td><td>370 €</td></tr>
+        <tr><td>26″ · 26″</td><td>390 €</td></tr>
+        <tr><td>28″ · 28″</td><td>430 €</td></tr>
+        <tr><td>30″ · 30″</td><td>470 €</td></tr>
+      </table>
+      <p class="mention">Tissage, tape-in, i-tips, coloration et entretien : pose possible au salon. Tarifs de pose sur devis.</p>
+      <div class="ctas">
+        <a href="https://wa.me/33661093864" class="btn btn-or" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+        <a href="mailto:contact@reinekbeauty.com" class="btn btn-sombre">Demander le catalogue</a>
+      </div>
     </div>
   </div>
 </section>
@@ -97,19 +136,6 @@
       <article class="fiche rev"><span class="num">06</span><h3>Wigs install</h3><p>La pose et la personnalisation de votre perruque : ajustement, découpe de la lace, coiffage.</p><dl><div><dt>Idéal pour</dt><dd>Changer de tête sans toucher à ses cheveux</dd></div><div><dt>Effet</dt><dd>Perruque invisible</dd></div></dl></article>
     </div>
     
-  </div>
-</section>
-
-<section class="fond-blanc">
-  <div class="wrap volet inverse">
-    <div class="volet-img rev"><div class="visuel"><img src="img/meches-raw.jpg" alt="" loading="lazy" style="object-position:50% 45%"></div></div>
-    <div class="rev">
-      <span class="eyebrow">La matière</span>
-      <h2>Pourquoi des mèches <em>RAW</em> ?</h2>
-      <p>La Maison travaille uniquement avec des cheveux naturels de qualité RAW, vendus par lot de 2 bundles.</p>
-      <ul class="points"><li>RAW : des cheveux naturels bruts, non traités chimiquement</li><li>Double drawn : la même épaisseur de la racine aux pointes</li><li>Ils se coiffent, se lissent et se bouclent comme vos cheveux</li><li>11 longueurs, de 10″ à 30″, de 150 à 470 € le lot</li></ul>
-      <div class="ctas"><a href="boutique.html#tarifs" class="btn btn-or">Voir les longueurs et les prix</a></div>
-    </div>
   </div>
 </section>
 
@@ -140,7 +166,7 @@
   <div class="wrap">
     <div class="titre-bloc rev"><span class="eyebrow">FAQ</span><h2>Questions <em>fréquentes</em></h2></div>
     <div class="rev">
-<details><summary>Faut-il acheter les mèches à la Maison ?</summary><p>Les mèches RAW de la Maison se commandent dans la boutique ou directement au salon. Pour une pose avec vos propres mèches, demandez à Reine sur WhatsApp.</p></details>
+<details><summary>Faut-il acheter les mèches à la Maison ?</summary><p>Les mèches RAW de la Maison se commandent sur cette page ou directement au salon. Pour une pose avec vos propres mèches, demandez à Reine sur WhatsApp.</p></details>
 <details><summary>Combien de lots faut-il pour une tête complète ?</summary><p>Cela dépend de la longueur et du volume voulus. Reine vous l’indique dans le devis, à partir d’une photo de vos cheveux.</p></details>
 <details><summary>Les mèches peuvent-elles être colorées ?</summary><p>Oui, la coloration fait partie des prestations de la Maison. Parlez-en au moment du devis.</p></details>
 <details><summary>Combien coûte la pose ?</summary><p>La pose est sur devis : le prix dépend de la technique et de la quantité de mèches. Demandez le vôtre sur WhatsApp.</p></details>
@@ -153,7 +179,7 @@
   <div class="wrap rev">
     <h2>Prête pour vos <em>longueurs</em> ?</h2>
     <p>Commandez vos mèches en ligne, ou demandez un devis de pose sur WhatsApp.</p>
-    <div class="ctas"><a href="boutique.html#tarifs" class="btn btn-or">Commander mes mèches</a><a href="https://wa.me/33661093864?text=Bonjour%20Maison%20Reine%20K%2C%20je%20souhaite%20un%20devis%20pour%20une%20pose%20d%27extensions." class="btn btn-ligne" target="_blank" rel="noopener">Demander un devis</a></div>
+    <div class="ctas"><a href="extensions.html#tarifs" class="btn btn-or">Commander mes mèches</a><a href="https://wa.me/33661093864?text=Bonjour%20Maison%20Reine%20K%2C%20je%20souhaite%20un%20devis%20pour%20une%20pose%20d%27extensions." class="btn btn-ligne" target="_blank" rel="noopener">Demander un devis</a></div>
   </div>
 </section>
 
@@ -167,7 +193,7 @@
       <div>
         <h4>La Maison</h4>
         <ul>
-          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="boutique.html">Produits</a></li>
           <li><a href="extensions.html">Extensions</a></li>
           <li><a href="lissages.html">Lissages</a></li>
           <li><a href="formations.html">Formations</a></li>
@@ -220,7 +246,7 @@
 <div class="paiement" id="paiement" aria-hidden="true">
   <div class="pay-grille" id="pay-form">
     <div class="pay-gauche">
-      <button class="pay-retour" id="pay-retour">← Retour à la boutique</button>
+      <button class="pay-retour" id="pay-retour">← Retour au site</button>
       <div class="pay-marchand">Maison Reine K</div>
       <div class="pay-total" id="pay-total">0,00 €</div>
       <div id="pay-items"></div>
