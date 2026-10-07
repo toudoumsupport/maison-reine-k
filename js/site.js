@@ -65,7 +65,7 @@ function rendre(){
   $('total-panier').textContent = euro(total);
   $('pied-panier').style.display = nb ? '' : 'none';
   const z = $('lignes');
-  if (!nb) { z.innerHTML = '<div class="panier-vide"><p>Votre panier est vide.</p><a href="boutique.html" class="btn btn-sombre" data-fermer>Voir la boutique</a></div>'; return; }
+  if (!nb) { z.innerHTML = '<div class="panier-vide"><p>Votre panier est vide.</p><a href="boutique.html" class="btn btn-sombre" data-fermer>Voir nos produits</a></div>'; return; }
   z.innerHTML = panier.map((x,i) => `<div class="ligne">
     ${x.img ? `<img src="${x.img}" alt="" class="${x.contenu ? 'contenu' : ''}">` : '<div class="sans-photo"></div>'}
     <div><h4>${x.nom}</h4><small>${x.v || ''}</small>
