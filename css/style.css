@@ -557,7 +557,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--or);outline-offset:
 .pt-txt{display:flex;flex-direction:column;justify-content:center;padding:150px 60px 70px max(24px,calc((100vw - 1180px)/2 + 24px))}
 .page-tete.avec-photo p{margin:0;max-width:440px}
 .page-tete.avec-photo .fil{margin-bottom:6px}
-.pt-grille .visuel{min-height:100%}
+.pt-grille .visuel{min-height:100%;background:#fff}
 @media (max-width:960px){
   .pt-grille{grid-template-columns:1fr;min-height:0}
   .pt-txt{padding:120px 24px 40px}
