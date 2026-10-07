@@ -749,6 +749,29 @@ footer{padding:64px 0 28px}
 .routine .gamme .produit{border:1px solid #e7e7e7}
 .etapes-grille.quatre{grid-template-columns:repeat(4,1fr)}
 .lissages-accueil .suite,.fiches+.suite{margin-top:44px}
+/* Tablette et téléphone : les photos basse définition ne sont jamais agrandies en pleine largeur */
+@media (max-width:960px){
+  .lissages{grid-template-columns:repeat(3,1fr);gap:14px}
+  .carte-l .corps{padding:20px 16px 22px}
+  .carte-l h3{font-size:1.25rem}
+  .pousse figure{max-width:420px;margin:0 auto}
+  .formations-grille{grid-template-columns:1fr 1fr}
+  .formation-carte{grid-template-columns:1fr}
+  .formation-carte .visuel{min-height:260px}
+  .pt-grille{grid-template-columns:1fr 1fr;min-height:380px}
+  .pt-txt{padding:120px 24px 40px}
+  .pt-grille .visuel{height:auto;min-height:100%}
+}
+@media (max-width:700px){
+  .lissages{grid-template-columns:1fr}
+  .formations-grille{grid-template-columns:1fr}
+  .formation-carte{grid-template-columns:36% 1fr}
+  .formation-carte .visuel{min-height:100%}
+  .carte-l{display:grid;grid-template-columns:36% 1fr}
+  .carte-l .visuel{aspect-ratio:auto;min-height:100%}
+  .pt-grille{grid-template-columns:1fr;min-height:0}
+  .pt-grille .visuel{height:340px;min-height:0}
+}
 @media (max-width:960px){
   .volet{grid-template-columns:1fr;gap:36px}
   .volet.inverse>.volet-img{order:0}
