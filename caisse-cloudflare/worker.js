@@ -3,7 +3,7 @@
 //
 // À régler dans Cloudflare (Settings > Variables and Secrets) :
 //   STRIPE_SECRET_KEY  (Secret)  clé secrète Stripe : sk_test_... pour tester, sk_live_... en réel
-//   SITE_URL           (Text)    adresse du site, sans / final. Ex : https://moncompte.github.io/maison-reine-k
+//   SITE_URL           (Text)    adresse du site, sans / final. Plusieurs adresses possibles, séparées par des virgules.
 
 // Prix en centimes. C'est ICI que les prix font foi : le site ne peut pas les modifier.
 const CATALOGUE = {
@@ -32,7 +32,10 @@ const PAYS_LIVRAISON = [
 
 export default {
   async fetch(request, env) {
-    const site = (env.SITE_URL || '').replace(/\/$/, '');
+    // SITE_URL peut contenir plusieurs adresses séparées par des virgules : on retient celle d'où vient la demande.
+    const sites = (env.SITE_URL || '').split(',').map(x => x.trim().replace(/\/$/, '')).filter(Boolean);
+    const origine = request.headers.get('Origin') || '';
+    const site = sites.find(x => new URL(x).origin === origine) || sites[0] || '';
     const origineSite = site ? new URL(site).origin : '*';
     const cors = {
       'Access-Control-Allow-Origin': origineSite,
