@@ -42,7 +42,7 @@ if(zone){
 // ===== Panier =====
 // Adresse de la caisse (Cloudflare Worker). Vide = mode démonstration, aucun paiement réel.
 // Exemple : 'https://caisse-reine-k.MONCOMPTE.workers.dev'
-const CAISSE_URL = '';
+const CAISSE_URL = 'https://caisse-maison-reine-k.toudoum-support.workers.dev';
 const WA = 'https://wa.me/33661093864';
 const euro = n => n.toLocaleString('fr-FR') + ' €';
 let panier = [];
