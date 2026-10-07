@@ -552,6 +552,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--or);outline-offset:
 .page-tete{background:var(--sable);padding:150px 0 70px;text-align:center}
 .page-tete h1{font-size:clamp(2rem,4.4vw,3.2rem);margin:.3em 0 .2em}
 .page-tete p{max-width:560px;margin:0 auto}
+.page-tete.avec-photo{padding:0;text-align:left}
+.pt-grille{display:grid;grid-template-columns:1fr 1fr;min-height:540px}
+.pt-txt{display:flex;flex-direction:column;justify-content:center;padding:150px 60px 70px max(24px,calc((100vw - 1180px)/2 + 24px))}
+.page-tete.avec-photo p{margin:0;max-width:440px}
+.page-tete.avec-photo .fil{margin-bottom:6px}
+.pt-grille .visuel{min-height:100%}
+@media (max-width:960px){
+  .pt-grille{grid-template-columns:1fr;min-height:0}
+  .pt-txt{padding:120px 24px 40px}
+  .pt-grille .visuel{min-height:0;height:300px}
+}
 .fil{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
 .fil a:hover{color:var(--or)}
 .rassure{background:#1c1b1b;color:#fff;padding:0}
